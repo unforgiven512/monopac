@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="3.5" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ItemType>PackagingProject</ItemType>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D506449D-A3F0-4FD4-AEE3-F4BAB8763308}</ProjectGuid>
+    <Packages>
+      <Packages>
+        <Package name="Mono Makefile Sources">
+          <Builder targetFile="pacinfo-.tar.gz" format="MonoDevelop.Projects.FileFormat" ctype="SourcesZipPackageBuilder">
+            <ChildEntries>
+              <SolutionItemReference path="pacinfo\pacinfo.csproj" />
+            </ChildEntries>
+            <RootEntry path="pacinfo.sln" id=":root:" />
+          </Builder>
+        </Package>
+        <Package name="Linux Binaries">
+          <Builder targetFile="pacinfo-linux.tar.gz" platform="Linux" configuration="Debug|x86" ctype="BinariesZipPackageBuilder">
+            <ChildEntries>
+              <SolutionItemReference path="pacinfo\pacinfo.csproj" />
+            </ChildEntries>
+            <RootEntry path="pacinfo.sln" id=":root:" />
+          </Builder>
+        </Package>
+        <Package name="Tarball">
+          <Builder TargetDirectory="pacinfo" DefaultConfiguration="Release|x86" ctype="TarballDeployTarget">
+            <ChildEntries>
+              <SolutionItemReference path="pacinfo\pacinfo.csproj" />
+            </ChildEntries>
+            <ExcludedFiles>
+              <File>pacinfo,ProgramFiles,libstetic.dll.mdb</File>
+              <File>pacinfo,ProgramFiles,libstetic.dll.config</File>
+              <File>pacinfo,ProgramFiles,libstetic.dll</File>
+            </ExcludedFiles>
+            <RootEntry path="pacinfo.sln" id=":root:" />
+          </Builder>
+        </Package>
+      </Packages>
+    </Packages>
+  </PropertyGroup>
+</Project>
