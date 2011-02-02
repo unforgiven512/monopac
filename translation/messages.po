@@ -1,0 +1,80 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2011-02-02 09:09:02+0100\n"
+"PO-Revision-Date: 2011-02-02 09:09:02+0100\n"
+"Last-Translator: user\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: MonoDevelop Gettext addin\n"
+
+#: ../pacinfo/gtk-gui/MainWindow.cs:95
+#: ../pacinfo/gtk-gui/MainWindow.cs:96
+msgid "File"
+msgstr ""
+
+#: ../pacinfo/gtk-gui/MainWindow.cs:98
+#: ../pacinfo/gtk-gui/MainWindow.cs:99
+msgid "Help"
+msgstr ""
+
+#: ../pacinfo/gtk-gui/MainWindow.cs:101
+#: ../pacinfo/gtk-gui/MainWindow.cs:102
+msgid "_Quit"
+msgstr ""
+
+#: ../pacinfo/gtk-gui/MainWindow.cs:104
+#: ../pacinfo/gtk-gui/MainWindow.cs:105
+msgid "About"
+msgstr ""
+
+#: ../pacinfo/gtk-gui/MainWindow.cs:110
+msgid "pacinfo"
+msgstr ""
+
+#: ../pacinfo/gtk-gui/MainWindow.cs:159
+msgid "Find Package:"
+msgstr ""
+
+#: ../pacinfo/gtk-gui/MainWindow.cs:226
+msgid "Description:"
+msgstr ""
+
+#: ../pacinfo/gtk-gui/MainWindow.cs:248
+msgid "Install Date:"
+msgstr ""
+
+#: ../pacinfo/gtk-gui/MainWindow.cs:270
+msgid "Name:"
+msgstr ""
+
+#: ../pacinfo/gtk-gui/MainWindow.cs:288
+msgid "Packager:"
+msgstr ""
+
+#: ../pacinfo/gtk-gui/MainWindow.cs:310
+msgid "URL:"
+msgstr ""
+
+#: ../pacinfo/gtk-gui/MainWindow.cs:332
+msgid "Version:"
+msgstr ""
+
+#: ../pacinfo/gtk-gui/MainWindow.cs:359
+msgid "<b>Package information</b>"
+msgstr ""
+
+#: ../pacinfo/gtk-gui/MainWindow.cs:380
+msgid "<b>Package contents</b>"
+msgstr ""
+
+#: ../pacinfo/gtk-gui/MainWindow.cs:418
+msgid "Reading information..."
+msgstr ""
+
+#: ../pacinfo/gtk-gui/pacinfo.ImageWindow.cs:17
+msgid "ImageWindow"
+msgstr ""
+
