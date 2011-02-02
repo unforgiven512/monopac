@@ -6,8 +6,8 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{38556012-EA7D-4088-AC74-34B79C3D33FE}</ProjectGuid>
     <relPath>locale</relPath>
-    <outputType>RelativeToOutput</outputType>
-    <packageName>i8n1</packageName>
+    <outputType>SystemPath</outputType>
+    <packageName>pacinfo</packageName>
     <translations>
       <translations>
         <Translation isoCode="de" />

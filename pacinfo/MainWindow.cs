@@ -27,6 +27,7 @@ using System.Diagnostics;
 using System.IO;
 using System.Net;
 using Gtk;
+using Mono.Unix;
 
 public partial class MainWindow : Gtk.Window
 {
@@ -42,7 +43,9 @@ public partial class MainWindow : Gtk.Window
 	{
 		Build ();
 		
-		packageColumn.Title = "Package";
+		Catalog.Init("pacinfo","");
+		
+		packageColumn.Title = global::Mono.Unix.Catalog.GetString ("Packages");
 		packageColumn.PackStart (packageCell, true);
 		tree.AppendColumn (packageColumn);
 		packageColumn.AddAttribute (packageCell, "text", 0);
