@@ -27,6 +27,7 @@
           <Builder TargetDirectory="pacinfo" DefaultConfiguration="Release|x86" ctype="TarballDeployTarget">
             <ChildEntries>
               <SolutionItemReference path="pacinfo\pacinfo.csproj" />
+              <SolutionItemReference path="translation\translation.mdproj" />
             </ChildEntries>
             <ExcludedFiles>
               <File>pacinfo,ProgramFiles,libstetic.dll.mdb</File>
@@ -38,5 +39,9 @@
         </Package>
       </Packages>
     </Packages>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug|x86</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
   </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86|AnyCPU' " />
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86|AnyCPU' " />
 </Project>
