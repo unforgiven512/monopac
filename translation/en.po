@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2011-02-02 11:02:34+0100\n"
+"POT-Creation-Date: 2011-02-02 17:00:19+0100\n"
 "PO-Revision-Date: 2011-02-02 11:06:27+0100\n"
 "Last-Translator: user\n"
 "Language-Team: \n"
@@ -11,27 +11,23 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: MonoDevelop Gettext addin\n"
 
-#: ../pacinfo/MainWindow.cs:48
+#: ../pacinfo/MainWindow.cs:47
 msgid "Packages"
 msgstr "Packages"
 
-#: ../pacinfo/gtk-gui/MainWindow.cs:95
-#: ../pacinfo/gtk-gui/MainWindow.cs:96
+#: ../pacinfo/gtk-gui/MainWindow.cs:95 ../pacinfo/gtk-gui/MainWindow.cs:96
 msgid "File"
 msgstr "File"
 
-#: ../pacinfo/gtk-gui/MainWindow.cs:98
-#: ../pacinfo/gtk-gui/MainWindow.cs:99
+#: ../pacinfo/gtk-gui/MainWindow.cs:98 ../pacinfo/gtk-gui/MainWindow.cs:99
 msgid "Help"
 msgstr "Help"
 
-#: ../pacinfo/gtk-gui/MainWindow.cs:101
-#: ../pacinfo/gtk-gui/MainWindow.cs:102
+#: ../pacinfo/gtk-gui/MainWindow.cs:101 ../pacinfo/gtk-gui/MainWindow.cs:102
 msgid "_Quit"
 msgstr "_Quit"
 
-#: ../pacinfo/gtk-gui/MainWindow.cs:104
-#: ../pacinfo/gtk-gui/MainWindow.cs:105
+#: ../pacinfo/gtk-gui/MainWindow.cs:104 ../pacinfo/gtk-gui/MainWindow.cs:105
 msgid "About"
 msgstr "About"
 
@@ -82,4 +78,3 @@ msgstr "Reading information..."
 #: ../pacinfo/gtk-gui/pacinfo.ImageWindow.cs:17
 msgid "ImageWindow"
 msgstr "ImageWindow"
-

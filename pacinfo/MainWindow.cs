@@ -27,7 +27,6 @@ using System.Diagnostics;
 using System.IO;
 using System.Net;
 using Gtk;
-using Mono.Unix;
 
 public partial class MainWindow : Gtk.Window
 {
@@ -42,8 +41,6 @@ public partial class MainWindow : Gtk.Window
 	public MainWindow () : base(Gtk.WindowType.Toplevel)
 	{
 		Build ();
-		
-		Catalog.Init("pacinfo","");
 		
 		packageColumn.Title = global::Mono.Unix.Catalog.GetString ("Packages");
 		packageColumn.PackStart (packageCell, true);
@@ -199,8 +196,9 @@ public partial class MainWindow : Gtk.Window
 		TreeIter iter;
 		
 		if (selection.GetSelected (out model, out iter)) {
+			GLib.Source.Remove (timer);
 			progressbar2.Visible = true;
-			timer = GLib.Timeout.Add(100, new GLib.TimeoutHandler (progress_timeout) );
+			timer = GLib.Timeout.Add (100, new GLib.TimeoutHandler (progress_timeout));
 			string packageName = (string)model.GetValue (iter, 0);
 			pacmanWrapper.getInformationOfPackageAsync (packageName);
 		}

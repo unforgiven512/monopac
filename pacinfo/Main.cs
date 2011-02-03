@@ -28,12 +28,12 @@ namespace pacinfo
 	{
 		public static void Main (string[] args)
 		{
+			Mono.Unix.Catalog.Init ("pacinfo", "");
+			
 			Application.Init ();
 			MainWindow win = new MainWindow ();
 			win.Show ();
 			Application.Run ();
-			
-			
 		}
 	}
 }
